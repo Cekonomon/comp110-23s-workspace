@@ -13,7 +13,7 @@ else:
         print("Error: Character must contain 1 letter")
         exit()
     else:
-        print("Searching for " + single_character, " in " + five_letter_word)
+        print("Searching for " + single_character + " in " + five_letter_word)
  
 
 if single_character == five_letter_word[0]:
