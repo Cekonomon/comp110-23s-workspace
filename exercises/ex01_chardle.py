@@ -2,13 +2,13 @@
 
 __author__ = "730529946"  
 
-five_letter_word: str = input("Enter a 5-character word: ")
+five_letter_word = input("Enter a 5-character word: ")
 
 if len(five_letter_word) != 5:
     print("Error: Word must contain 5 characters")
     exit()
 else:
-    single_character: str = input("Enter a single character: ")
+    single_character = input("Enter a single character: ")
     if len(single_character) != 1:
         print("Error: Character must contain 1 letter")
         exit()
