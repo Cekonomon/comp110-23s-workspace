@@ -23,7 +23,7 @@ while playing:
         else:
             guessed: bool = False
             alt_inx: int = 0
-            while not guessed and  alt_inx < len_secret:
+            while not guessed and alt_inx < len_secret:
                 if guess[index_variable] == SECRET[alt_inx]:
                     guessed = True
                 alt_inx += 1
@@ -32,10 +32,7 @@ while playing:
             else:  
                 result = result + WHITE_BOX
         index_variable = index_variable + 1 
-        playing = False
-
-          
-                    
+        playing = False             
 print(result)
 
 playing: bool = True
