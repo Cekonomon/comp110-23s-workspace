@@ -6,12 +6,11 @@ def all(list_int: list[int], single_int: int) -> bool:
     """All integers are the same"""
     idx: int = 0
     while idx < len(list_int):
-        if list_int[idx] != single_int:
+        if single_int != list_int[idx]:
             return False
-        idx =+ 1
-    else:
-        return True
-
+        if single_int == list_int[idx]:
+            idx += 1
+    return True
 
 def max(input: list[int]) -> int:
     if len(input) == 0:
