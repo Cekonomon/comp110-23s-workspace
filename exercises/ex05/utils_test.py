@@ -5,7 +5,7 @@ from exercises.ex05.utils import only_evens, concat, sub
 
 
 def test_empty() -> None:
-    "Empty list with only evens."
+    """Empty with evens."""
     assert only_evens([]) == []
 
 
