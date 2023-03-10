@@ -18,15 +18,15 @@ def concat(list_one: list[int], list_two: list[int]) -> list[int]:
         lists.append(numbers)
     return lists
 
-def sub(a_list: list[int], start_idx, end_idx) -> list[str]:
+def sub(a_list: list[int], start_idx, end_idx) -> list[int]:
     """generates subset of given"""
-    list1: list[int] = list()
+    list1: list[int] = []
 
     if start_idx < 0:
         start_idx = 0
-    if end_idx > len(list1):
-        end_idx = len(list1)
-    if len(a_list) == 0 or start_idx >= len(list1) or end_idx <= 0:
+    if end_idx > len(a_list):
+        end_idx = len(a_list)
+    if len(a_list) == 0 or start_idx >= len(a_list) or end_idx <= 0:
         return []
     for idx in range(start_idx, end_idx):
         list1.append(a_list[idx])

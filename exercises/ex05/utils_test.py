@@ -33,4 +33,11 @@ def test_single_list() -> None:
     """Empty list an single list."""
     assert concat([], [1, 2, 3]) == [1, 2, 3]
 
+def test_sub_list() -> None:
+    """Testing lists"""
+    assert sub([10, 20, 30, 40], 1, 3) == [20, 30]
+
+def test_sub_two() -> None:
+    """Testing with a empty."""
+    assert sub([10, 20, 30, 40], 0, 0) == []
 
