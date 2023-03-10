@@ -9,6 +9,7 @@ def only_evens(list_evens: list[int]) -> int:
             evens.append(idx)
     return evens 
 
+
 def concat(list_one: list[int], list_two: list[int]) -> list[int]:
     """Two list together."""
     lists: list[int] = []
@@ -18,8 +19,9 @@ def concat(list_one: list[int], list_two: list[int]) -> list[int]:
         lists.append(numbers)
     return lists
 
+
 def sub(a_list: list[int], start_idx, end_idx) -> list[int]:
-    """generates subset of given"""
+    """Generates subset of given."""
     list1: list[int] = []
 
     if start_idx < 0:
