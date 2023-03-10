@@ -7,44 +7,30 @@ def test_empty() -> None:
     "Empty list with only evens."
     assert only_evens([]) == []
 
-def test_concat_empty() -> None:
-    """Empty list."""
+def test_concat() -> None:
+    """Another empty."""
     assert concat([], []) == []
 
-def even_list() -> None:
-    """Returning evens from a list."""
-    list1: list[int] = [1, 2, 3, 4]
-    assert only_evens(list1) == []
+def test_sub() -> None:
+    """Empty."""
+    assert sub([], 3, 4) == []
 
-def sub_empty() -> None:
-    """Subset empty."""
-    assert sub([], 2, 3) == []
+def test_only_evens() -> None:
+    """Even list."""
+    test_list: list[int] = [1, 2, 3]
+    assert only_evens(test_list) == [2]
 
-def negative_start() -> None:
-    """Starting with a negative."""
-    list2: list[int] = [1, 2, 3, 4]
-    starting: int = -1
-    ending: 4
-    assert sub(list2, starting, ending) == [1, 2, 3, 4]
+def test_odds() -> None:
+    """Testing odds."""
+    test_list: list[int] = [1, 3, 5]
+    assert only_evens(test_list) == []
 
-def negative() -> None:
-    """Negative"""
-    list3: list[int] = [-11, -4, -3, 2, 1]
-    assert only_evens(list3) == [-11, 10]
+def test_two_lists() -> None:
+    """Two lists."""
+    assert concat([1, 2], [5, 6]) == [1, 2, 5, 6]
 
-def two_lists() -> None:
-    """Two list test."""
-    list4: list[int] = ([1, 2, 3], [1, 2, 3])
-    assert concat(list4) == []
+def test_single_list() -> None:
+    """Empty list an single list."""
+    assert concat([], [1, 2, 3]) == [1, 2, 3]
 
-def single_list() -> None:
-    """A single list and an empty."""
-    list5: list[int] = ([1, 2, 3], [])
-    assert concat(list5) == []
 
-def end_negative() -> None:
-    """Ending with negative"""
-    list6: list[int] = [4, 3, 2, 1]
-    starts: int = 4
-    ends: int = -1
-    assert sub(list6, starts, ends) == [4, 3, 2, 1]
