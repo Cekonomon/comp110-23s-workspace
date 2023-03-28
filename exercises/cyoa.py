@@ -6,21 +6,21 @@ lower = 1
 higher = 100
 secret_number = None
 attempts = 0
-points = 0
+points: int = 0
 SMILEY = "\U0001F60A"
 
-def greet():
+def greet() -> None:
     global player
-    player = input("insert your name: ")
+    player: str = input("insert your name: ")
     print(f"Welcome {player}! Are you ready to play?")
 
 
-def create():
+def create() -> None:
     """This function will generate a random number between the lower and higher numbers in global variable."""
     global secret_number
     secret_number = random.randint(lower, higher)
 
-def guess():
+def guess() -> None:
     """User will guess secret number."""
     global attempts, points
     attempts = 0
@@ -35,7 +35,7 @@ def guess():
             points += 1
     print("Congratulations, you guessed the number in", attempts, "attempts!" + SMILEY)
 
-def reassign_points():
+def reassign_points() -> None:
     """This reassigns the points global variable based on user's choices."""
     global points
     choice = input("Do you want to keep playing? (Y/N) ")
@@ -44,7 +44,7 @@ def reassign_points():
     else:
         points -+ 3
 
-def main():
+def main() -> None:
     """Has the greeting message and generates a random number."""
     greet()
     create()
