@@ -7,6 +7,7 @@ higher = 100
 secret_number = None
 attempts = 0
 points: int = 0
+player: str = ""
 SMILEY = "\U0001F60A"
 
 def greet() -> None:
