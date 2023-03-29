@@ -1,4 +1,4 @@
-"""Ex07 dictionary."""
+"""Ex07 dictionary practice."""
 
 __author__ = "730529946"
 

@@ -23,6 +23,7 @@ def test_invert_three() -> None:
         input_list = {'kris': 'jordan', 'michael': 'jordan'}
         invert(input_list)
 
+
 def test_favorite_color_one():
     """Testing two colors."""
     assert favorite_color({"Marc": "yellow", "Ezri": "blue", "Kris": "blue"}) == 'blue'
