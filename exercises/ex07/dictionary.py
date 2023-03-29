@@ -1,6 +1,7 @@
-"""Ex07 dictionary"""
+"""Ex07 dictionary."""
 
 __author__ = "730529946"
+
 
 def invert(input_list: dict[str, str]) -> dict[str, str]:
     """Invert the key values of a dictionary."""
@@ -10,6 +11,7 @@ def invert(input_list: dict[str, str]) -> dict[str, str]:
             raise KeyError("Error found")
         inverted[input_list[word]] = word
     return inverted
+
 
 def favorite_color(colors: dict[str, str]) -> str:
     """Returns the favorite color."""
@@ -28,6 +30,7 @@ def favorite_color(colors: dict[str, str]) -> str:
             count = appears[color]
             popular = color
     return popular
+
 
 def count(items: list[str]) -> dict[str, int]:
     """Counts the frequencies."""
