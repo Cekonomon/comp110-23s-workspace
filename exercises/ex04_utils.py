@@ -3,7 +3,7 @@
 __author__ = "730529946"
 
 def all(list_int: list[int], single_int: int) -> bool:
-    """All integers are the same"""
+    """All integers are the same."""
     idx: int = 0
     while idx < len(list_int):
         if single_int != list_int[idx]:
@@ -13,6 +13,7 @@ def all(list_int: list[int], single_int: int) -> bool:
     return True
 
 def max(input: list[int]) -> int:
+    """Return max."""
     if len(input) == 0:
         raise ValueError("max() arg is an empty list")
     
@@ -26,7 +27,7 @@ def max(input: list[int]) -> int:
     return largest
 
 def is_equal(list_one: list[int], list_two: list[int]) -> bool:
-    """checking if both lists are equal"""
+    """Checking if both lists are equal."""
     i: int = 0
     if len(list_one) != len(list_two):
         return False 
